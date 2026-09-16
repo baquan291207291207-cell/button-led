@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"btap1bsc\startup_stm32f103xb.o"
+"btap1bsc\main.o"
+"btap1bsc\stm32f1xx_it.o"
+"btap1bsc\stm32f1xx_hal_msp.o"
+"btap1bsc\stm32f1xx_hal_gpio_ex.o"
+"btap1bsc\stm32f1xx_hal.o"
+"btap1bsc\stm32f1xx_hal_rcc.o"
+"btap1bsc\stm32f1xx_hal_rcc_ex.o"
+"btap1bsc\stm32f1xx_hal_gpio.o"
+"btap1bsc\stm32f1xx_hal_dma.o"
+"btap1bsc\stm32f1xx_hal_cortex.o"
+"btap1bsc\stm32f1xx_hal_pwr.o"
+"btap1bsc\stm32f1xx_hal_flash.o"
+"btap1bsc\stm32f1xx_hal_flash_ex.o"
+"btap1bsc\stm32f1xx_hal_exti.o"
+"btap1bsc\system_stm32f1xx.o"
+--strict --scatter "btap1BSC\btap1BSC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "btap1BSC.map" -o btap1BSC\btap1BSC.axf
